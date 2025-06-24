@@ -27,7 +27,7 @@ export default function Movie() {
     return (
         <div>
             {
-                <ul className="grid grid-cols-3 gap-4 place-items-center">
+                <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 place-items-center">
                     {Array.isArray(data) && data.length > 0 ? (
                         data.map((currElem) => (
                             <Card key={currElem.imdbID} movieData={currElem} />
